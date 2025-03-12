@@ -3,3 +3,4 @@ git remote add origin "link do repositorio d vcs"
 git add .
 git commit -m 'teste'
 git checkout -b "inventa um nome p branch d vcs"
+git push origin *nome da branch que tu colocou antes
