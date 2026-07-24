@@ -1,101 +1,125 @@
-# Family Guy Game
+# Family Guy: The Game
 
-Jogo inspirado universo Family Guy, desenvolvido para praticar lógica, programação jogos, arquitetura projeto.
+Jogo 2D desenvolvido em JavaScript utilizando HTML5 Canvas, inspirado universo Family Guy. Projeto criado para praticar Programação Orientada a Objetos, lógica jogos, animações, colisão, física básica.
 
 ## Tecnologias
 
-- Java
-- Maven
-- Swing/Java2D (ou biblioteca usada)
-- IntelliJ IDEA
+- HTML5
+- CSS3
+- JavaScript (ES6)
+- HTML5 Canvas
+
+---
 
 ## Funcionalidades
 
-- Sistema movimentação personagem
-- Colisão
-- Inimigos
-- Pontuação
-- Menu inicial
+- Movimentação suave com aceleração/desaceleração
+- Pulo com gravidade
+- Queda rápida (`S`)
+- Animação caminhada
+- Sprite diferente durante pulo
+- Colisão personalizada
+- Sistema pontuação
 - Game Over
-- Sons (caso tenha)
-- Animações (caso tenha)
+- Reinício clicando tela
+- Dificuldade progressiva
+- Inimigos desbloqueados durante partida
 
-## Estrutura
+---
 
-```text
-FamilyGuy-Game/
-├── src/
-├── assets/
-├── pom.xml
-└── README.md
-```
+## Controles
+
+| Tecla | Ação |
+|-------|------|
+| `A` | Andar esquerda |
+| `D` | Andar direita |
+| `Space` | Pular |
+| `S` | Cair mais rápido |
+
+---
+
+## Inimigos
+
+- Joe
+- Lois
+- Jack
+
+Cada inimigo aumenta velocidade conforme partida avança.
+
+---
 
 ## Como executar
 
-### Pré-requisitos
-
-- Java 21+
-- Maven
-
-### Clonar
+Clone repositório:
 
 ```bash
 git clone https://github.com/rafasantossss/FamilyGuy-Game.git
 ```
 
-### Entrar projeto
+Entre pasta:
 
 ```bash
 cd FamilyGuy-Game
 ```
 
-### Executar
+Abra arquivo `index.html`.
 
-```bash
-mvn clean install
-mvn exec:java
+Ou utilize extensão **Live Server** VS Code.
+
+---
+
+## Estrutura
+
+```
+FamilyGuy-Game
+│
+├── imagens/
+├── index.html
+├── script.js
+└── README.md
 ```
 
-Ou abrir projeto IntelliJ IDEA, executar classe principal.
+---
 
-## Objetivo
+## Conceitos utilizados
 
-Controlar personagem, evitar obstáculos/inimigos, fazer maior pontuação possível.
-
-## Aprendizados
-
-Projeto criado para praticar:
-
-- Programação Orientada Objetos
-- Estrutura projetos Java
-- Lógica jogos
+- Programação Orientada a Objetos
+- Classes
+- Herança
+- Encapsulamento (`#contar`)
+- `requestAnimationFrame`
+- Colisão AABB
+- Manipulação DOM
 - Eventos teclado
-- Renderização gráfica
-- Tratamento colisões
+- Sprites
+- Física básica
+- Canvas API
 
-## Contribuição
+---
 
-1. Fork projeto
-2. Criar branch
+## Melhorias futuras
 
-```bash
-git checkout -b feature/minha-feature
-```
+- Sons
+- Música fundo
+- Menu inicial
+- Sistema vidas
+- Ranking
+- Power-ups
+- Mais fases
+- Responsividade
+- Pause
+- Efeitos partículas
 
-3. Commit
+---
 
-```bash
-git commit -m "Minha feature"
-```
+## Autor
 
-4. Push
+**Rafael Guimarães dos Santos**
 
-```bash
-git push origin feature/minha-feature
-```
+GitHub: https://github.com/rafasantossss
 
-5. Abrir Pull Request
+---
 
 ## Licença
 
-Projeto uso educacional.
+Projeto educacional. Inspirado série **Family Guy**. Todos direitos personagens pertencem respectivos proprietários.
